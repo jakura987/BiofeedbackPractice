@@ -25,9 +25,9 @@ class MainActivity : AppCompatActivity() {
 //        }
 //        Timber.d("version name: ${BuildConfig.VERSION_NAME}")
 
-        findViewById<Button>(R.id.blueToothConnection).setOnClickListener {
-            Toast.makeText(this@MainActivity, "blueToothConnect", Toast.LENGTH_SHORT).show()
-        }
+//        findViewById<Button>(R.id.blueToothConnection).setOnClickListener {
+//            Toast.makeText(this@MainActivity, "blueToothConnect", Toast.LENGTH_SHORT).show()
+//        }
 
 
     }

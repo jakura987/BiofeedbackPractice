@@ -78,6 +78,7 @@ dependencies {
     implementation(libs.rxrelay)
     implementation(libs.autodispose.android)
     implementation(libs.autodispose.android.archcomponents)
+    implementation(project(":network:wifiConnection"))
 
 
     testImplementation(libs.junit)

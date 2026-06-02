@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 
 import com.intellizondy.biofeedback.R
 import dagger.hilt.android.AndroidEntryPoint
+import timber.log.Timber
 
 
 @AndroidEntryPoint
@@ -20,9 +21,9 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-//        if (BuildConfig.DEBUG) {
-//            Timber.plant(Timber.DebugTree())
-//        }
+        if (BuildConfig.DEBUG) {
+            Timber.plant(Timber.DebugTree())
+        }
 //        Timber.d("version name: ${BuildConfig.VERSION_NAME}")
 
 //        findViewById<Button>(R.id.blueToothConnection).setOnClickListener {

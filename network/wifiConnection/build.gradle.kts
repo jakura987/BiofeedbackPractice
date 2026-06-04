@@ -45,4 +45,10 @@ dependencies {
     implementation("com.google.dagger:hilt-android:2.56.2")
     kapt("com.google.dagger:hilt-compiler:2.56.2")
 
+    // RxJava2 核心库
+    implementation("io.reactivex.rxjava2:rxjava:2.2.21")
+    // RxAndroid：提供 Android main-thread 调度器等
+    implementation("io.reactivex.rxjava2:rxandroid:2.1.1")
+    implementation(libs.rxrelay)
+
 }

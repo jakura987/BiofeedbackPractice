@@ -6,7 +6,6 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.intellizondy.biofeedback.databinding.ActivityMainBinding
 import com.intellizondy.biofeedback.network.tcp.LocalIpHelper
-import com.intellizondy.biofeedback.network.tcp.SimpleTcpServer
 import com.intellizondy.biofeedback.network.tcp.WifiTcpServerManager
 import dagger.hilt.android.AndroidEntryPoint
 import timber.log.Timber
@@ -36,20 +35,6 @@ class MainActivity : AppCompatActivity() {
 
         val ipList = LocalIpHelper.listPrivateIPv4()
 
-
-//        wifiTcpServerManager.setOnReceiveListener{ peer, data ->
-//            Timber.tag("TCP_TEST").w(
-//                "收到数据 peer=%s len=%d hex=%s text=%s",
-//                peer,
-//                data.size,
-//                SimpleTcpServer.toHex(data, data.size),
-//                data.toString(Charsets.UTF_8)
-//            )
-//
-//            //收到什么 就回一段ack
-//            val reply = "ACK from Android\r\n".toByteArray(Charsets.UTF_8)
-//            wifiTcpServerManager.sendToPeer(peer, reply)
-//        }
 
         wifiTcpServerManager.ensureStarted(8883)
 

@@ -237,9 +237,9 @@ public final class SimpleTcpServer {
                 byte[] copy = new byte[n];
                 System.arraycopy(buffer, 0, copy, 0, n);
 
-                Log.d(TAG, "recv peer=" + peer
-                        + " len=" + n
-                        + " head=" + toHex(copy, Math.min(n, 16)));
+                Log.i(TAG, "recv peer=" + peer);
+                Log.i(TAG, "recv len=" + n);
+                Log.i(TAG, "recv hex=" + toHex(copy, copy.length));
 
                 try {
                     if (listener != null) {

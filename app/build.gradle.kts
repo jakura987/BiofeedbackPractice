@@ -79,6 +79,7 @@ dependencies {
     implementation(libs.autodispose.android)
     implementation(libs.autodispose.android.archcomponents)
     implementation(project(":network:wifiConnection"))
+    implementation(project(":base:base"))
 
 
     testImplementation(libs.junit)

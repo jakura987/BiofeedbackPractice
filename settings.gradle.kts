@@ -23,3 +23,4 @@ dependencyResolutionManagement {
 rootProject.name = "BiofeedbackPractice"
 include(":app")
 include(":network:wifiConnection")
+include(":base:base")
